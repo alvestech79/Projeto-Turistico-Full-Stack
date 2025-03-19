@@ -18,17 +18,21 @@
 
     p {
         font-weight: 300;
+        font-size: 24px;
     }
 
-body {
-    background-image: url(assets/bg-image.jpg);
-    background-size: cover;
-}
+    
+
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(1, 1, 1, 0.9)),
+                    url(assets/bg-image.jpg) no-repeat center/cover;
+    }
+    
 
 #page {
     width: 1920px;
-    padding: 24px;
-    background-color: #f0e8c2;
+    padding: 50px;
+    background-color: #ffffff9e;
     border-radius: 24px;
     margin: 48px auto 28px;
 }
@@ -46,15 +50,15 @@ section + section {
 }
 
 #about p + p {
-    margin-top: 12px;
+    margin-top: 24px;
 }
 
 h1{
     line-height: 140%;
-    font-size: 40px;
+    font-size: 50px;
 }
 h2{
-    font-size: 24px;
+    font-size: 34px;
 }
 
 h1, h2{
@@ -63,6 +67,7 @@ h1, h2{
     line-height: 150%;
 }
 footer{
+    color: bisque;
     font-size: 24px;
     text-align: center;
     padding-bottom: 48px;

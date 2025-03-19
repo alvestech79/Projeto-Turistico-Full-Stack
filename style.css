@@ -1,48 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; Para garantir que padding e margin não afetem o tamanho dos elementos */
 }
+
 :root {
-        font-family: 'Poppins', sans-serif;
-        line-height: 150%;
-        margin: 20px;
-        padding: 20px;
-        background-color: #f4f4f4;
-        color: #573a37;
-    }
-    
-    h1, h2 {
-        font-weight: 600;
-        color: #291B1A;
-    }
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5; /* Definindo uma linha mais consistente */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #573a37;
+}
 
-    p {
-        font-weight: 300;
-        font-size: 24px;
-    }
+h1, h2 {
+    font-weight: 600;
+    color: #291B1A;
+    line-height: 1.5; /* Consistência na altura da linha */
+    margin-bottom: 8px; /* Espaço abaixo dos títulos */
+}
 
-    
+p {
+    font-weight: 300;
+    font-size: 1.5rem; /* Usando unidades relativas para escalabilidade */
+    line-height: 1.6; /* Melhor leitura */
+}
 
-    body {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(1, 1, 1, 0.9)),
-                    url(assets/bg-image.jpg) no-repeat center/cover;
-                    border-radius: 24px;
-    }
-    
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(1, 1, 1, 0.9)),
+                url(assets/bg-image.jpg) no-repeat center/cover;
+}
 
 #page {
-    width: 1920px;
-    padding: 200px;
-    background-color: #ffffff9e;
+    max-width: 1920px; /* Para garantir que o conteúdo não ultrapasse o limite */
+    padding: 48px;
+    background-color: rgba(255, 255, 255, 0.62); /* Usando RGBA para controle da opacidade */
     border-radius: 24px;
-    margin: 28px auto 28px;
+    margin: 28px auto;
 }
 
 img {
-   border-radius: 16px; 
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto; /* Centraliza as imagens */
 }
 
-main{
+main {
     padding: 24px;
 }
 
@@ -50,29 +53,21 @@ section + section {
     margin-top: 24px;
 }
 
-#about p + p {
-    margin-top: 24px;
+h1 {
+    font-size: 3rem; /* Remoção do valor em pixels, melhor utilizar rem ou em para maior escalabilidade */
 }
 
-h1{
-    line-height: 140%;
-    font-size: 50px;
-}
-h2{
-    font-size: 34px;
+h2 {
+    font-size: 2rem;
 }
 
-h1, h2{
-    color: #291B1A;
-    margin-bottom: 4px;
-    line-height: 150%;
-}
-footer{
+footer {
     color: bisque;
     font-size: 24px;
     text-align: center;
     padding-bottom: 48px;
 }
-footer img{
+
+footer img {
     vertical-align: middle;
 }
